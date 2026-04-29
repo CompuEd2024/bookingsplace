@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #451ebb;
+  --color-primary-container: #5d3fd3;
+  --color-secondary: #605693;
+  --color-background: #fdf8ff;
+  --color-on-background: #1c1a23;
+  --color-surface: #fdf8ff;
+  --color-on-surface: #1c1a23;
+  --color-on-surface-variant: #484554;
+  --color-surface-container: #f1ecf8;
+  --color-surface-container-low: #f7f1fe;
+  --color-surface-container-lowest: #ffffff;
+  --color-outline-variant: #c9c4d7;
+  --color-secondary-fixed-dim: #cabeff;
+  
+  --font-headline: "Cairo", "Inter", sans-serif;
+  --font-body: "Inter", "Cairo", sans-serif;
+  
+  --shadow-luminous: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+@layer utilities {
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+  }
+  
+  .iris-gradient {
+    background: linear-gradient(135deg, #451ebb 0%, #5d3fd3 100%);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(93, 63, 211, 0.2);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(93, 63, 211, 0.4);
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body);
+}
+
+[dir="rtl"] {
+  font-family: var(--font-headline);
+  line-height: 1.8;
+}

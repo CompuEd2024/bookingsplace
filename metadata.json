@@ -1,0 +1,10 @@
+{
+  "name": "bookingsplace 4  - Event & Styling Platform different pricing tiers",
+  "description": "High-end event booking and lifestyle imaging platform with multi-tier pricing, inventory management, and AI-powered boutique styling.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
